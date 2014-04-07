@@ -606,7 +606,7 @@ package awayphysics.debug
 		}
 		
 		public function debugDrawWorld():void {
-			if (m_debugMode & AWPDebugDraw.DBG_NoDebug) return;
+			if (m_debugMode == AWPDebugDraw.DBG_NoDebug) return;
 			
 			var dir:Vector3D = _view.camera.forwardVector.clone();
 			dir.scaleBy(100);
